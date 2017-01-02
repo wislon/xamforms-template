@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using XamForms.Shared;
 
 namespace XamForms.UI
 {
@@ -7,6 +8,8 @@ namespace XamForms.UI
     public MainPage()
     {
       InitializeComponent();
+
+      var sn = new SharedNetwork();
     }
   }
 }
