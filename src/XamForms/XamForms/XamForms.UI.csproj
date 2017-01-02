@@ -8,8 +8,8 @@
     <ProjectGuid>{10D347B1-4195-4E9D-ABC3-AE9924F1BED7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>XamForms</RootNamespace>
-    <AssemblyName>XamForms</AssemblyName>
+    <RootNamespace>XamForms.UI</RootNamespace>
+    <AssemblyName>XamForms.UI</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
