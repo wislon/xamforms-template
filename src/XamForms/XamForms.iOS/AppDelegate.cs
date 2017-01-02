@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using XamForms.UI;
 
 namespace XamForms.iOS
 {

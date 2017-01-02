@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.UI", "XamForms\XamForms\XamForms.UI.csproj", "{10D347B1-4195-4E9D-ABC3-AE9924F1BED7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.UI", "XamForms\XamForms.UI\XamForms.UI.csproj", "{10D347B1-4195-4E9D-ABC3-AE9924F1BED7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.Droid", "XamForms\XamForms.Droid\XamForms.Droid.csproj", "{00225E8C-3B1A-4206-ACFA-77423D15F932}"
 EndProject
@@ -178,7 +178,8 @@ Global
 		{1B0D214E-8E4E-4C2D-B99B-E10E6877C58E}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
 		{1B0D214E-8E4E-4C2D-B99B-E10E6877C58E}.AppStore|x64.ActiveCfg = AppStore|iPhone
 		{1B0D214E-8E4E-4C2D-B99B-E10E6877C58E}.AppStore|x86.ActiveCfg = AppStore|iPhone
-		{1B0D214E-8E4E-4C2D-B99B-E10E6877C58E}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{1B0D214E-8E4E-4C2D-B99B-E10E6877C58E}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{1B0D214E-8E4E-4C2D-B99B-E10E6877C58E}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{1B0D214E-8E4E-4C2D-B99B-E10E6877C58E}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{1B0D214E-8E4E-4C2D-B99B-E10E6877C58E}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{1B0D214E-8E4E-4C2D-B99B-E10E6877C58E}.Debug|iPhone.Build.0 = Debug|iPhone

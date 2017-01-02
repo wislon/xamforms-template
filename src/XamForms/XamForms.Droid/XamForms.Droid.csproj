@@ -135,7 +135,7 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamForms\XamForms.UI.csproj">
+    <ProjectReference Include="..\XamForms.UI\XamForms.UI.csproj">
       <Project>{10D347B1-4195-4E9D-ABC3-AE9924F1BED7}</Project>
       <Name>XamForms.UI</Name>
     </ProjectReference>
