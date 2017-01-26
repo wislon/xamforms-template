@@ -35,6 +35,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AkavacheSqliteLinkerOverride.cs" />
+    <Compile Include="Enums\AppNotificationType.cs" />
+    <Compile Include="Enums\OSType.cs" />
+    <Compile Include="Interfaces\IPlatformDirectory.cs" />
+    <Compile Include="Interfaces\IPlatformFile.cs" />
+    <Compile Include="Interfaces\IPlatformInfo.cs" />
+    <Compile Include="Interfaces\IPlatformNotification.cs" />
+    <Compile Include="Interfaces\ISQLite.cs" />
     <Compile Include="SharedNetwork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
