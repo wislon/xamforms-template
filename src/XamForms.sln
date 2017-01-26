@@ -16,7 +16,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{A5E2A855-7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.Shared", "XamForms\XamForms.Shared\XamForms.Shared.csproj", "{38263DAA-8BCF-4295-A95D-A6DEFED410AF}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamForms.Platform", "XamForms\XamForms.Platform\XamForms.Platform.shproj", "{770C9992-BD2D-4D83-8151-1F2CE5C52D7A}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		XamForms\XamForms.Platform\XamForms.Platform.projitems*{00225e8c-3b1a-4206-acfa-77423d15f932}*SharedItemsImports = 4
+		XamForms\XamForms.Platform\XamForms.Platform.projitems*{1b0d214e-8e4e-4c2d-b99b-e10e6877c58e}*SharedItemsImports = 4
+		XamForms\XamForms.Platform\XamForms.Platform.projitems*{770c9992-bd2d-4d83-8151-1f2ce5c52d7a}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
 		Ad-Hoc|ARM = Ad-Hoc|ARM

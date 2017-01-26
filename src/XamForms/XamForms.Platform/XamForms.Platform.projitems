@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>770c9992-bd2d-4d83-8151-1f2ce5c52d7a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XamForms.Platform</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)FileSystem\PlatformDirectory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FileSystem\PlatformFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQLite\SQLitePlatform.cs" />
+  </ItemGroup>
+</Project>
