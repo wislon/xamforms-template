@@ -65,7 +65,7 @@ namespace XamForms.Droid.Platform
       var notificationSound = GetNotificationSound(notificationType);
 
       var notificationBuilder = new NotificationCompat.Builder(Application.Context)
-        .SetContentTitle("LGIA Super")
+        .SetContentTitle("XFTemplate")
         .SetContentText(notificationMessage)
         .SetAutoCancel(true)
         .SetPriority(5)

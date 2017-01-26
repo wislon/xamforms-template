@@ -7,7 +7,7 @@
     /// </summary>
     public static string ApiBaseUrl => $"{GetSiteBaseBaseUrl()}api/";
 
-    public const string SharedAkavacheCacheName = "LGIACache";
+    public const string SharedAkavacheCacheName = "XFTemplateCache";
 
     /// <summary>
     /// Calculated for now because you may have different ones depending 

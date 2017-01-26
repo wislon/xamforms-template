@@ -2,7 +2,7 @@
 {
   public class AppConstants
   {
-    public const string TAG = "LGIA";
+    public const string TAG = "XamLog";
 
     /// <summary>
     /// ID for setting normal kinds of notifications in the status bar
