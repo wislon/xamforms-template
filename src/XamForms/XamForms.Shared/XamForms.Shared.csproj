@@ -43,6 +43,7 @@
     <Compile Include="Interfaces\IPlatformInfo.cs" />
     <Compile Include="Interfaces\IPlatformNotification.cs" />
     <Compile Include="Interfaces\ISQLite.cs" />
+    <Compile Include="SharedCache.cs" />
     <Compile Include="SharedConstants.cs" />
     <Compile Include="SharedNetwork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
