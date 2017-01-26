@@ -24,8 +24,20 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>i386, x86_64</MtouchArch>
-    <MtouchLink>None</MtouchLink>
-    <MtouchDebug>true</MtouchDebug>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchSdkVersion>10.2</MtouchSdkVersion>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>True</MtouchFastDev>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>False</MtouchFloat32>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -198,6 +210,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Rx-Core.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Core.dll</HintPath>
       <Private>True</Private>
