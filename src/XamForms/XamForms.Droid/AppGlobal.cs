@@ -47,6 +47,8 @@ namespace XamForms.Droid
 
       RegisterPlatformFileImplementation();
       RegisterPlatformDirectoryImplementation();
+
+      RegisterPlatformNotificationImplementation();
     }
 
     private static void RegisterPlatformInfoImplementation()
@@ -65,6 +67,13 @@ namespace XamForms.Droid
     {
       DroidPlatformDirectory = new PlatformDirectory();
       Locator.CurrentMutable.RegisterConstant(DroidPlatformDirectory, typeof(IPlatformDirectory));
+    }
+
+    private static void RegisterPlatformNotificationImplementation()
+    {
+      DroidPlatformNotification = new DroidPlatformNotification();
+      DroidPlatformNotification.Init();
+      Locator.CurrentMutable.RegisterConstant(DroidPlatformNotification, typeof(IPlatformNotification));
     }
 
 
