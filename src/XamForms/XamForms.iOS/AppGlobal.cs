@@ -2,6 +2,7 @@ using System;
 using System.Text;
 using Splat;
 using XamForms.iOS.Platform;
+using XamForms.Platform.FileSystem;
 using XamForms.Shared;
 using XamForms.Shared.Interfaces;
 
@@ -11,14 +12,13 @@ namespace XamForms.iOS
   {
     private static bool _initialised;
 
-    public static IPlatformInfo PlatformInfo { get; private set; }
-
     public static IPlatformNotification iOSPlatformNotification { get; private set; }
 
     public static IPlatformInfo PlatformInfo { get; private set; }
-    public static IPlatformFile iOSPlatformFile { get; private set; }
 
-    public static IPlatformDirectory iOSPlatformDirectory { get; private set; }
+    public static IPlatformFile PlatformFile { get; private set; }
+
+    public static IPlatformDirectory PlatformDirectory { get; private set; }
 
     public static string DeviceSpecifics { get; private set; }
 
@@ -52,14 +52,14 @@ namespace XamForms.iOS
 
     private static void RegisterPlatformFileImplementation()
     {
-      iOSPlatformFile = new PlatformFile();
-      Locator.CurrentMutable.RegisterConstant(iOSPlatformFile, typeof(IPlatformFile));
+      PlatformFile = new PlatformFile();
+      Locator.CurrentMutable.RegisterConstant(PlatformFile, typeof(IPlatformFile));
     }
 
     private static void RegisterPlatformDirectoryImplementation()
     {
-      iOSPlatformDirectory = new PlatformDirectory();
-      Locator.CurrentMutable.RegisterConstant(iOSPlatformDirectory, typeof(IPlatformDirectory));
+      PlatformDirectory = new PlatformDirectory();
+      Locator.CurrentMutable.RegisterConstant(PlatformDirectory, typeof(IPlatformDirectory));
     }
 
     private static void RegisterPlatformNotificationImplementation()

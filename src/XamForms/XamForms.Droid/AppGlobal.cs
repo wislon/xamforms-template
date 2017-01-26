@@ -6,6 +6,7 @@ using Android.OS;
 using Android.Support.V4.App;
 using Splat;
 using XamForms.Droid.Platform;
+using XamForms.Platform.FileSystem;
 using XamForms.Shared;
 using XamForms.Shared.Interfaces;
 
@@ -18,8 +19,8 @@ namespace XamForms.Droid
     public static Context MainActivityContext { get; private set; }
 
     public static IPlatformInfo PlatformInfo { get; private set; }
-    public static IPlatformFile DroidPlatformFile { get; private set; }
-    public static IPlatformDirectory DroidPlatformDirectory { get; private set; }
+    public static IPlatformFile PlatformFile { get; private set; }
+    public static IPlatformDirectory PlatformDirectory { get; private set; }
     public static IPlatformNotification DroidPlatformNotification { get; private set; }
 
     public static string DeviceSpecifics { get; private set; }
@@ -59,14 +60,14 @@ namespace XamForms.Droid
 
     private static void RegisterPlatformFileImplementation()
     {
-      DroidPlatformFile = new PlatformFile();
-      Locator.CurrentMutable.RegisterConstant(DroidPlatformFile, typeof(IPlatformFile));
+      PlatformFile = new PlatformFile();
+      Locator.CurrentMutable.RegisterConstant(PlatformFile, typeof(IPlatformFile));
     }
 
     private static void RegisterPlatformDirectoryImplementation()
     {
-      DroidPlatformDirectory = new PlatformDirectory();
-      Locator.CurrentMutable.RegisterConstant(DroidPlatformDirectory, typeof(IPlatformDirectory));
+      PlatformDirectory = new PlatformDirectory();
+      Locator.CurrentMutable.RegisterConstant(PlatformDirectory, typeof(IPlatformDirectory));
     }
 
     private static void RegisterPlatformNotificationImplementation()
