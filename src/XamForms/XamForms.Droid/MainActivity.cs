@@ -34,6 +34,7 @@ namespace XamForms.Droid
       base.OnPostCreate(savedInstanceState);
 
       AppGlobal.Init(this);
+      this.Log().Debug(AppGlobal.DeviceSpecifics);
 
       _notifier = Locator.Current.GetService<IPlatformNotification>();
 
