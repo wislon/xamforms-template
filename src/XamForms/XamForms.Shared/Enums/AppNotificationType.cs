@@ -4,5 +4,7 @@
   {
     Unknown = 0,
     Default,
+    LoginRequired,
+    DeviceNotSupported
   }
 }

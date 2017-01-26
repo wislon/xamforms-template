@@ -8,8 +8,6 @@ namespace XamForms.UI
     public MainPage()
     {
       InitializeComponent();
-
-      var sn = new SharedNetwork();
     }
   }
 }
