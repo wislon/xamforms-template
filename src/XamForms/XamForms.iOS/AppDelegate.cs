@@ -30,7 +30,7 @@ namespace XamForms.iOS
       // this.Log().Debug($"Started by location/region notification: {startedByLocationNotificaton}");
 
       AppGlobal.Init();
-      LogDeviceSpecifics();
+      this.Log().Debug(AppGlobal.DeviceSpecifics);
 
       global::Xamarin.Forms.Forms.Init();
       LoadApplication(new App());
@@ -38,9 +38,5 @@ namespace XamForms.iOS
       return base.FinishedLaunching(app, launchOptions);
     }
 
-    private void LogDeviceSpecifics()
-    {
-      this.Log().Debug(AppGlobal.DeviceSpecifics);
-    }
   }
 }
