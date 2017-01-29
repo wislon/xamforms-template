@@ -10,6 +10,8 @@ using Splat;
 using XamForms.Shared.Enums;
 using XamForms.Shared.Interfaces;
 using XamForms.UI;
+using XamForms.UI.Interfaces;
+using XamForms.UI.Navigation;
 
 namespace XamForms.Droid
 {
@@ -54,6 +56,11 @@ namespace XamForms.Droid
         this.Finish();
         return;
       }
+
+      var navService = new NavigationService();
+      navService.RegisterViewModels(typeof(MasterDetailRootPage).Assembly);
+
+      Locator.CurrentMutable.RegisterConstant(navService, typeof(INavigationService));
 
       LoadApplication(new App());
     }
