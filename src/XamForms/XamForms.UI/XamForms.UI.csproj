@@ -55,6 +55,18 @@
     <Compile Include="ViewModels\NormalModalViewModel.cs" />
     <Compile Include="ViewModels\NormalOneChildViewModel.cs" />
     <Compile Include="ViewModels\NormalOneViewModel.cs" />
+    <Compile Include="Views\MasterDetail\MasterListNavPage.xaml.cs">
+      <DependentUpon>MasterListNavPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Normal\NormalModalPage.xaml.cs">
+      <DependentUpon>NormalModalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Normal\NormalOneChildPage.xaml.cs">
+      <DependentUpon>NormalOneChildPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Normal\NormalOnePage.xaml.cs">
+      <DependentUpon>NormalOnePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -114,6 +126,31 @@
       <Project>{38263DAA-8BCF-4295-A95D-A6DEFED410AF}</Project>
       <Name>XamForms.Shared</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MasterDetail\MasterListNavPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Normal\NormalOnePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Normal\NormalModalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Normal\NormalOneChildPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
