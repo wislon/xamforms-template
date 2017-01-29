@@ -6,6 +6,8 @@ using Foundation;
 using Splat;
 using UIKit;
 using XamForms.UI;
+using XamForms.UI.Interfaces;
+using XamForms.UI.Navigation;
 
 namespace XamForms.iOS
 {
@@ -33,6 +35,12 @@ namespace XamForms.iOS
       this.Log().Debug(AppGlobal.DeviceSpecifics);
 
       global::Xamarin.Forms.Forms.Init();
+
+      var navService = new NavigationService();
+      navService.RegisterViewModels(typeof(MasterDetailRootPage).Assembly);
+
+      Locator.CurrentMutable.RegisterConstant(navService, typeof(INavigationService));
+
       LoadApplication(new App());
 
       return base.FinishedLaunching(app, launchOptions);

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:masterDetail="clr-namespace:XamForms.UI.Views.MasterDetail;assembly=XamForms.UI"
+             xmlns:normal="clr-namespace:XamForms.UI.Views.Normal;assembly=XamForms.UI"
+             x:Class="XamForms.UI.MasterDetailRootPage">
+
+  <MasterDetailPage.Master>
+    <masterDetail:MasterListNavPage x:Name="listNav" Title="Nav" />
+  </MasterDetailPage.Master>
+
+  <MasterDetailPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <normal:NormalOnePage x:Name="normalOne" />
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+
+</MasterDetailPage>

@@ -8,7 +8,9 @@ namespace XamForms.UI
     {
       InitializeComponent();
 
-      MainPage = new MainPage();
+      // The root page of your application
+      var mdRoot = new MasterDetailRootPage();
+      MainPage = mdRoot;
     }
 
     protected override void OnStart()
