@@ -26,6 +26,7 @@ namespace XamForms.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::ModernHttpClient.Resource.String.library_name = global::XamForms.Droid.Resource.String.library_name;
 			global::Splat.Resource.String.library_name = global::XamForms.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::XamForms.Droid.Resource.Attribute.actionBarSize;
 		}
