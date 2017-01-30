@@ -40,6 +40,9 @@
     <Compile Include="Enums\AppNotificationType.cs" />
     <Compile Include="Enums\NetworkConnectedState.cs" />
     <Compile Include="Enums\OSType.cs" />
+    <Compile Include="Helpers\AuthenticatedHttpClientHandler.cs" />
+    <Compile Include="Helpers\AuthHelper.cs" />
+    <Compile Include="Interfaces\IAuthenticationHelper.cs" />
     <Compile Include="Interfaces\IPlatformDirectory.cs" />
     <Compile Include="Interfaces\IPlatformFile.cs" />
     <Compile Include="Interfaces\IPlatformInfo.cs" />
